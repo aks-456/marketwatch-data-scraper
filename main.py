@@ -3,8 +3,7 @@ import xlsxwriter
 import requests
 
 
-tickers = ['adaviation', 'adcb', 'adib', 'bildco', 'taqa', 'adnh', 'adnic', 'adnocdist', 'tkfl', 'adports', 'adxb', 'adnocdrill', 'aglty', 'agthia', 'ajmanbank', 'alfirdous', 'kico', 'alramz', 'salam.bah', 'alsalamsudan', 'asm', 'yahsat', 'aldar', 'alphadhabi', 'amanat', 'amlak', 'apex', 'aram', 'armx', 'emsteel', 'bhmcapital', 'cbi', 'cbd', 'dana', 'dartakaful', 'depa', 'deyaar', 'dewa', 'dfm', 'dic', 'dib', 'aman', 'dnir', 'drc', 'easylease', 'emaardev', 'emaar', 'drive', 'du' 'emiratesnbd', 'erc', 'reit', 'etisalat', 'enbdreit', 'esg', 'eshraq', 
-'fertiglobe', 'fh', 'fab', 'fnf', 'fci', 'gfh', 'ghita', 'gchem', 'gulfnav', 'julphar', 'ihc', 'salama', 'ithmr', 'manazel', 'masq', 'methaq', 'multiply', 'rakbank', 'nbq', 'ncc', 'tabreed', 'nmdc', 'watania', 'oic', 'ords', 'outfl', 'palms', 'qholding', 'rakcec', 'rakprop', 'rakwct', 'rapco', 'rpm', 'scidc', 'sib', 'shuaa', 'sudatel', 'takaful.em', 'union', 'upp', 'uab', 'waha']
+tickers = ['GOOGL', 'MSFT', 'AAPL', 'AMZN', 'TSLA']
 position = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 text = requests.get('https://www.marketwatch.com/investing/stock/' + tickers[0] + '/download-data').text
